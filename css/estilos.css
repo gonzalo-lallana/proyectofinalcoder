@@ -1,0 +1,462 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.partidos .partidosGrupos, .partidos .partidosEliminacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+header {
+  width: 100%;
+  background-color: #2a2a9e;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid 2px black; }
+  header .navbar {
+    display: contents; }
+    header .navbar .navbar-light .navbar-brand {
+      color: white; }
+    header .navbar .navbar-light .navbar-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-direction: row; }
+      header .navbar .navbar-light .navbar-nav .nav-link {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        margin: 10px;
+        transition: 1s; }
+        header .navbar .navbar-light .navbar-nav .nav-link:hover {
+          color: black; }
+    header .navbar img {
+      width: 70px;
+      height: 70px; }
+    header .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 30px;
+      margin: 10px;
+      transition: 1s; }
+      header .navbar a:hover {
+        color: black; }
+
+.hero {
+  width: 100%;
+  height: 850px;
+  border: 2px solid black;
+  background: linear-gradient(rgba(0, 0, 0, 0.332), rgba(0, 0, 0, 0.383)), url(../img/argentina-campeon-del-mundo-qatar-2022.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white; }
+  .hero p {
+    font-size: 20px;
+    font-weight: 100;
+    color: white; }
+
+.texto {
+  width: 100%;
+  background-color: lightskyblue;
+  background-size: cover;
+  text-align: center;
+  padding: 20px; }
+  .texto p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding-top: 20px; }
+
+.partidos {
+  background-color: lightskyblue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .partidos h2 {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .partidos .partidosGrupos {
+    margin: 25px; }
+  .partidos .partidosEliminacion {
+    margin: 25px; }
+  .partidos .partidosFinal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px; }
+  .partidos div h3 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 20px; }
+  .partidos div img {
+    width: 400px;
+    height: 300px;
+    margin: 10px; }
+  .partidos div a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+    transition: 1s; }
+    .partidos div a:hover {
+      color: black; }
+
+.productos {
+  width: 100%;
+  background-color: lightskyblue;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .productos h1 {
+    color: black;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center; }
+  .productos p {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 15px;
+    color: black; }
+  .productos .productosUno {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px; }
+    .productos .productosUno div {
+      border: solid 1px gray;
+      text-align: center;
+      padding: 5px;
+      transition: 0.5s; }
+      .productos .productosUno div:hover {
+        transform: scale(1.05);
+        box-shadow: 7px 7px 30px 0px rgba(0, 0, 0, 0.37);
+        -webkit-box-shadow: 7px 7px 30px 0px rgba(0, 0, 0, 0.37);
+        -moz-box-shadow: 7px 7px 30px 0px rgba(0, 0, 0, 0.37); }
+  .productos .productosDos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px; }
+    .productos .productosDos div {
+      border: solid 1px gray;
+      text-align: center;
+      padding: 5px;
+      transition: 0.5s; }
+      .productos .productosDos div:hover {
+        transform: scale(1.05);
+        box-shadow: 7px 7px 30px 0px rgba(0, 0, 0, 0.37);
+        -webkit-box-shadow: 7px 7px 30px 0px rgba(0, 0, 0, 0.37);
+        -moz-box-shadow: 7px 7px 30px 0px rgba(0, 0, 0, 0.37); }
+  .productos div h3 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-left: 20px;
+    color: black; }
+  .productos div a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px; }
+    .productos div a:hover {
+      color: black; }
+  .productos div img {
+    width: 300px;
+    height: 300px;
+    margin: 10px; }
+
+.servicios {
+  width: 100%;
+  height: 3500px;
+  background-color: lightskyblue;
+  background-size: cover; }
+  .servicios h1 {
+    color: black;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; }
+  .servicios .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    gap: 15px; }
+    .servicios .grid-galeria div img {
+      width: 90%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 10px 11px 36px 1px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 11px 36px 1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 11px 36px 1px rgba(0, 0, 0, 0.75);
+      margin: 10px;
+      transition: 0.5s; }
+      .servicios .grid-galeria div img:hover {
+        transform: scale(1.1); }
+
+.servicios .img-1 {
+  grid-column: span 2; }
+
+.servicios .img-2 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.contacto {
+  width: 100%;
+  height: 100vh;
+  background-color: lightskyblue;
+  border: 3px solid black; }
+  .contacto h1 {
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px; }
+  .contacto .form {
+    border: 2px solid rgba(0, 0, 0, 0.621);
+    background-color: rgba(222, 184, 135, 0.471); }
+
+.nosotros {
+  width: 100%;
+  background-color: lightskyblue;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .nosotros h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center; }
+  .nosotros p {
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center; }
+  .nosotros img {
+    width: 90%;
+    height: 600px;
+    margin-left: 20px; }
+
+.fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 50px; }
+  .fixed img {
+    width: 200px;
+    height: 150px; }
+
+footer {
+  width: 100%;
+  height: 20%;
+  background-color: #119292;
+  background-size: cover;
+  padding: 10px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: start; }
+  footer a {
+    margin: 5px; }
+    footer a img {
+      width: 100px;
+      height: 100px;
+      transition: 1s; }
+      footer a img:hover {
+        transform: scale(1.1); }
+
+@media screen and (max-width: 1315px) {
+  .partidos {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    .partidos .partidosGrupos {
+      margin-bottom: 0px; }
+    .partidos .partidosEliminacion {
+      margin-bottom: 0px; }
+    .partidos div h3 {
+      font-size: 30px;
+      font-weight: 400;
+      margin-left: 15px; }
+    .partidos div img {
+      width: 350px;
+      height: 250px;
+      margin: 10px; }
+  .productos div h3 {
+    font-size: 25px; }
+  .productos div img {
+    width: 250px;
+    height: 250px; } }
+
+@media screen and (max-width: 1215px) {
+  .partidos .partidosGrupos {
+    flex-direction: column; }
+  .partidos .partidosEliminacion {
+    flex-direction: column; } }
+
+@media screen and (max-width: 1199px) {
+  header .navbar .navbar-light .navbar-nav .navbar-link {
+    font-size: 20px;
+    margin-right: 25px; }
+  .texto p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding-top: 20px; }
+  .productos div h3 {
+    font-size: 25px; }
+  .productos div img {
+    width: 200px;
+    height: 200px; }
+  .servicios {
+    height: 2900px; }
+    .servicios .grid-galeria {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 300px;
+      gap: 10px;
+      width: fit-content; }
+      .servicios .grid-galeria div img {
+        width: 90%;
+        height: 100%;
+        margin: 6px; }
+      .servicios .grid-galeria .img-1 {
+        grid-column: span 1; }
+      .servicios .grid-galeria .img-2 {
+        grid-column: span 1;
+        grid-row: span 1; } }
+
+@media screen and (max-width: 950px) {
+  .fixed {
+    right: 15px;
+    bottom: 15px; }
+    .fixed img {
+      width: 180px;
+      height: 120px; }
+  .hero h1 {
+    font-size: 50px; }
+  .partidos h2 {
+    font-size: 30px; }
+  .productos div h3 {
+    font-size: 20px; }
+  .productos div img {
+    width: 150px;
+    height: 150px;
+    margin: 5px; }
+  .productos div a {
+    font-size: 20px;
+    margin-left: 15px; }
+  .nosotros img {
+    width: 600PX;
+    height: 400px;
+    margin-left: 20px; } }
+
+@media screen and (max-width: 665px) {
+  .fixed {
+    position: fixed;
+    right: 10px;
+    bottom: 10px; }
+    .fixed img {
+      width: 150px;
+      height: 100px; }
+  .navbar .navbar-light .navbar-nav {
+    flex-direction: column; }
+    .navbar .navbar-light .navbar-nav .navbar-link {
+      font-size: 25px; }
+  .navbar img {
+    width: 55px;
+    height: 55px; }
+  .productos h2 {
+    font-size: 35px; }
+  .productos .productosUno {
+    flex-direction: column; }
+  .productos .productosDos {
+    flex-direction: column; }
+  .productos div h3 {
+    font-size: 35px; }
+  .productos div img {
+    width: 300px;
+    height: 300px; }
+  .productos div a {
+    font-size: 25px;
+    margin-left: 20px;
+    padding-bottom: 10px; }
+  .servicios {
+    height: 5700px; }
+    .servicios .grid-galeria {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 300px;
+      gap: 10px;
+      width: fit-content; }
+      .servicios .grid-galeria div img {
+        width: 95%;
+        height: 100%;
+        margin: 6px; }
+  .nosotros img {
+    width: 400PX;
+    height: 300px;
+    margin-left: 20px; }
+  footer a img {
+    width: 70px;
+    height: 70px; } }
+
+@media screen and (max-width: 585px) {
+  .hero h1 {
+    font-size: 30px; }
+  .nosotros img {
+    width: 300PX;
+    height: 200px;
+    margin-left: 20px; } }
+
+@media screen and (max-width: 380px) {
+  .hero p {
+    font-size: 15px; }
+  .texto p {
+    font-size: 15px; }
+  .partidos div img {
+    width: 300px;
+    height: 200px; }
+  .productos div h3 {
+    font-size: 30px; }
+  .productos div a {
+    font-size: 20px;
+    margin-left: 15px; }
+  .productos div img {
+    width: 250px;
+    height: 250px; }
+  .servicios {
+    height: 5700px; }
+    .servicios .grid-galeria {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 300px;
+      gap: 10px;
+      width: fit-content; }
+      .servicios .grid-galeria div img {
+        width: 95%;
+        height: 85%;
+        margin: 4px; } }

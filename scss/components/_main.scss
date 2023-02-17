@@ -1,0 +1,270 @@
+// main index
+
+.hero{
+    width: 100%;
+    height: 850px;
+    border: 2px solid nth($colores, 1);
+    background: linear-gradient(rgba(0, 0, 0, 0.332),rgba(0, 0, 0, 0.383)), url(../img/argentina-campeon-del-mundo-qatar-2022.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include flexbox (flex, center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    h1{
+        font-size: nth($fuente, 1);
+        font-weight: bold;
+        color: nth($colores , 2);
+    }
+    p{
+        font-size: nth($fuente, 6);
+        font-weight: 100;
+        color: nth($colores , 2);
+    }
+}
+
+.texto{
+    width: 100%;
+    background-color: $color-primario;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    p{
+        font-size: nth($fuente, 6);
+    font-family: 'Times New Roman', Times, serif;
+    color: nth($colores, 1);
+    padding-top: 20px;
+    }
+}
+
+.partidos{
+    background-color: $color-primario;
+    width: 100%;
+    @include flexbox (flex, center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    h2{
+        font-size: nth($fuente, 2);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .partidosGrupos{
+        @extend %flex;
+        margin: 25px;
+    }
+    .partidosEliminacion{
+        @extend %flex;
+        margin: 25px;
+    }
+    .partidosFinal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px;
+    }
+    div{
+        h3{
+            font-size: nth($fuente, 2);
+            font-weight: 400;
+            margin-left: 20px;
+        }
+        img{
+            width: 400px;
+            height: 300px;
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: nth($colores , 2);
+            font-size: nth($fuente, 5);
+            margin-left: 20px;
+            transition: 1s;
+            &:hover{
+                color: nth($colores, 1);
+            }
+        }
+    }
+}
+
+// productos main
+.productos{
+    width: 100%;
+    background-color: $color-primario;
+    background-size: cover;
+    @include flexbox (flex, center, center);
+    flex-direction: column;
+    h1{
+        color: nth($colores, 1);
+        font-size: nth($fuente, 2);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        margin: 20px;
+        text-align: center;
+    }
+    p{
+        font-size: nth($fuente, 6);
+    font-weight: 200;
+    margin: 15px;
+    color: nth($colores, 1);
+    }
+    .productosUno{
+        width: 100%;
+        @include flexbox (flex, space-around, center);
+        flex-wrap: wrap;
+        margin: 25px;
+        div{
+            border: solid 1px gray;
+            text-align: center;
+            padding: 5px;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 7px 7px 30px 0px rgba(0,0,0,0.37);
+                -webkit-box-shadow: 7px 7px 30px 0px rgba(0,0,0,0.37);
+                -moz-box-shadow: 7px 7px 30px 0px rgba(0,0,0,0.37);
+            }
+        }
+    }
+    .productosDos{
+        width: 100%;
+        @include flexbox (flex, space-around, center);
+        flex-wrap: wrap;
+        margin: 25px;
+        div{
+            border: solid 1px gray;
+            text-align: center;
+            padding: 5px;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 7px 7px 30px 0px rgba(0,0,0,0.37);
+                -webkit-box-shadow: 7px 7px 30px 0px rgba(0,0,0,0.37);
+                -moz-box-shadow: 7px 7px 30px 0px rgba(0,0,0,0.37);
+            }
+        }
+    }
+    div{
+        h3{
+            font-size: nth($fuente, 3);
+            font-weight: 400;
+            margin-left: 20px;
+            color: nth($colores, 1);
+        }
+        a{
+            text-decoration: none;
+            color: nth($colores , 2);
+            font-size: nth($fuente, 5);
+            margin-left: 20px;
+            &:hover{
+                color: nth($colores, 1);
+            }
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }
+    }
+}
+
+// servicios
+.servicios{
+    width: 100%;
+    height: 3500px;
+    background-color: $color-primario;
+    background-size: cover;
+    h1{
+        color: nth($colores, 1);
+        font-size: nth($fuente, 2);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .grid-galeria{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 400px;
+        gap: 15px;
+        div{
+            img{
+                width: 90%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: 10px 11px 36px 1px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 10px 11px 36px 1px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 11px 36px 1px rgba(0,0,0,0.75);
+                margin: 10px;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.servicios{
+    .img-1{
+        grid-column: span 2;
+    }
+    .img-2{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+// contacto
+.contacto{
+    width: 100%;
+    height: 100vh;
+    background-color: $color-primario;
+    border: 3px solid nth($colores, 1);
+    h1{
+        font-size: nth($fuente, 4);
+        font-weight: 300;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+    }
+    .form{
+        border: 2px solid rgba(0, 0, 0, 0.621);
+        background-color: rgba(222, 184, 135, 0.471);
+    }
+}
+
+// nosotros
+.nosotros{
+    width: 100%;
+    background-color: $color-primario;
+    background-size: cover;
+    @include flexbox (flex, center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    h1{
+        font-size: nth($fuente, 2);
+        font-weight: 600;
+        text-align: center;
+    }
+    p{
+        font-size: nth($fuente, 5);
+        font-weight: 200;
+        text-align: center;
+    }
+    img{
+        width: 90%;
+        height: 600px;
+        margin-left: 20px;
+    }
+}
+
+.fixed{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    img{
+        width: 200px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,47 @@
+
+header{
+    width: 100%;
+    background-color: rgb(42, 42, 158);
+    position: sticky;
+    top: 0;
+    @include flexbox (flex, space-between, center);
+    flex-wrap: wrap;
+    border: solid 2px nth($colores, 1);
+    .navbar{
+        display: contents;
+        .navbar-light{
+            
+            .navbar-brand{
+                color: nth($colores , 2);
+            }
+            .navbar-nav{
+                @include flexbox (flex, space-between, flex-end);
+                flex-direction: row;
+                .nav-link{
+                    text-decoration: none;
+                    color: white;
+                    font-size: nth($fuente, 4);
+                    margin: 10px;
+                    transition: 1s;
+                    &:hover{
+                        color: nth($colores, 1);
+                    }
+                }
+            }
+        }
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        a{
+            text-decoration: none;
+                    color: nth($colores , 2);
+                    font-size: nth($fuente, 4);
+                    margin: 10px;
+                    transition: 1s;
+                    &:hover{
+                        color: nth($colores, 1);
+                    }
+        }
+    }
+}

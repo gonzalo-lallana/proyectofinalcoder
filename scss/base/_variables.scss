@@ -1,0 +1,30 @@
+// variables
+$color-primario: lightskyblue;
+
+// listas
+$colores:
+black,
+white;
+
+$fuente:
+60px,
+40px,
+35px,
+30px,
+25px,
+20px;
+
+// extends
+%flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+// mixins
+@mixin flexbox ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
