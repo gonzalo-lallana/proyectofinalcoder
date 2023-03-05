@@ -218,7 +218,8 @@ header {
       -webkit-box-shadow: 10px 11px 36px 1px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 11px 36px 1px rgba(0, 0, 0, 0.75);
       margin: 10px;
-      transition: 0.5s; }
+      padding: 10px;
+      transition: 0.2s; }
       .servicios .grid-galeria div img:hover {
         transform: scale(1.1); }
 
@@ -263,7 +264,8 @@ header {
   .nosotros img {
     width: 90%;
     height: 600px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    padding: 20px; }
 
 .fixed {
   position: fixed;
@@ -333,23 +335,25 @@ footer {
     font-size: 25px; }
   .productos div img {
     width: 200px;
-    height: 200px; }
+    height: 220px; }
   .servicios {
     height: 2900px; }
     .servicios .grid-galeria {
       grid-template-columns: repeat(2, 1fr);
       grid-auto-rows: 300px;
       gap: 10px;
-      width: fit-content; }
+      width: 100%; }
       .servicios .grid-galeria div img {
-        width: 90%;
+        width: 97%;
         height: 100%;
         margin: 6px; }
       .servicios .grid-galeria .img-1 {
         grid-column: span 1; }
       .servicios .grid-galeria .img-2 {
         grid-column: span 1;
-        grid-row: span 1; } }
+        grid-row: span 1; }
+  footer {
+    width: 100%; } }
 
 @media screen and (max-width: 950px) {
   .fixed {
@@ -365,16 +369,49 @@ footer {
   .productos div h3 {
     font-size: 20px; }
   .productos div img {
-    width: 150px;
-    height: 150px;
+    width: 185px;
+    height: 242px;
     margin: 5px; }
   .productos div a {
     font-size: 20px;
     margin-left: 15px; }
+  .servicios {
+    height: 2925px; }
+    .servicios .grid-galeria div {
+      padding-bottom: 20px; }
   .nosotros img {
     width: 600PX;
     height: 400px;
-    margin-left: 20px; } }
+    margin-left: 20px;
+    padding-bottom: 20px; } }
+
+@media screen and (max-width: 835px) {
+  .productos div h3 {
+    font-size: 20px; }
+  .productos div img {
+    width: 160px;
+    height: 230px;
+    margin: 5px; }
+  .productos div a {
+    font-size: 20px;
+    margin-left: 15px; } }
+
+@media screen and (max-width: 735px) {
+  .productos .productosUno {
+    margin: 0; }
+  .productos .productosDos {
+    margin: 0; }
+  .productos div {
+    margin-bottom: 20px; }
+    .productos div h3 {
+      font-size: 20px; }
+    .productos div img {
+      width: 250px;
+      height: 242px;
+      margin: 5px; }
+    .productos div a {
+      font-size: 20px;
+      margin-left: 15px; } }
 
 @media screen and (max-width: 665px) {
   .fixed {
@@ -412,7 +449,8 @@ footer {
       grid-template-columns: 1fr;
       grid-auto-rows: 300px;
       gap: 10px;
-      width: fit-content; }
+      width: 100%;
+      padding: 10px; }
       .servicios .grid-galeria div img {
         width: 95%;
         height: 100%;
@@ -420,7 +458,8 @@ footer {
   .nosotros img {
     width: 400PX;
     height: 300px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    padding-bottom: 20px; }
   footer a img {
     width: 70px;
     height: 70px; } }
@@ -429,11 +468,19 @@ footer {
   .hero h1 {
     font-size: 30px; }
   .nosotros img {
-    width: 300PX;
-    height: 200px;
-    margin-left: 20px; } }
+    width: 350PX;
+    height: 300px;
+    margin-left: 20px;
+    padding-bottom: 15px; } }
 
 @media screen and (max-width: 380px) {
+  .fixed {
+    position: fixed;
+    right: 5px;
+    bottom: 5px; }
+    .fixed img {
+      width: 115px;
+      height: 60px; }
   .hero p {
     font-size: 15px; }
   .texto p {
@@ -450,13 +497,18 @@ footer {
     width: 250px;
     height: 250px; }
   .servicios {
-    height: 5700px; }
+    height: 5750px; }
     .servicios .grid-galeria {
       grid-template-columns: 1fr;
       grid-auto-rows: 300px;
-      gap: 10px;
-      width: fit-content; }
-      .servicios .grid-galeria div img {
-        width: 95%;
-        height: 85%;
-        margin: 4px; } }
+      gap: 5px;
+      width: 100%; }
+      .servicios .grid-galeria div {
+        padding-bottom: 5px; }
+        .servicios .grid-galeria div img {
+          width: 95%;
+          height: 85%;
+          margin: 4px; }
+  .nosotros img {
+    width: 300px;
+    height: 250px; } }
