@@ -268,7 +268,10 @@
     }
     // servicios
     .servicios{
-        height: 5700px;
+        height: 5780px;
+        h1{
+            font-size: nth($fuente, 4);
+        }
         .grid-galeria{
             grid-template-columns: 1fr;
             grid-auto-rows: 300px;

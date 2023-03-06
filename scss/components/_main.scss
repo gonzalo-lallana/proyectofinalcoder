@@ -16,11 +16,15 @@
         font-size: nth($fuente, 1);
         font-weight: bold;
         color: nth($colores , 2);
+        padding-left: 10px;
+        padding-right: 10px;
     }
     p{
         font-size: nth($fuente, 6);
         font-weight: 100;
         color: nth($colores , 2);
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -32,9 +36,11 @@
     padding: 20px;
     p{
         font-size: nth($fuente, 6);
-    font-family: 'Times New Roman', Times, serif;
-    color: nth($colores, 1);
-    padding-top: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: nth($colores, 1);
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -49,6 +55,8 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: bold;
         margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .partidosGrupos{
         @extend %flex;
@@ -180,7 +188,8 @@
         font-size: nth($fuente, 2);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        padding: 15px;
         text-align: center;
     }
     .grid-galeria{
@@ -224,10 +233,21 @@
     background-color: $color-primario;
     border: 3px solid nth($colores, 1);
     h1{
-        font-size: nth($fuente, 4);
-        font-weight: 300;
+        color: nth($colores, 1);
+        font-size: nth($fuente, 2);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-bottom: 20px;
+        font-weight: bold;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+    p{
+        font-size: nth($fuente, 6);
+        font-family: 'Times New Roman', Times, serif;
+        color: nth($colores, 1);
+        padding-top: 20px;
+        text-align: center;
+        padding: 10px;
     }
     .form{
         border: 2px solid rgba(0, 0, 0, 0.621);
@@ -244,14 +264,20 @@
     flex-direction: column;
     flex-wrap: wrap;
     h1{
+        color: nth($colores, 1);
         font-size: nth($fuente, 2);
-        font-weight: 600;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        margin: 20px;
+        padding: 10px;
         text-align: center;
     }
     p{
-        font-size: nth($fuente, 5);
+        font-size: nth($fuente, 6);
         font-weight: 200;
         text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     img{
         width: 90%;
