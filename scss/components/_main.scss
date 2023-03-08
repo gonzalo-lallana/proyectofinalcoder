@@ -250,8 +250,14 @@
         padding: 10px;
     }
     .form{
+        font-size: 15px;
+        font-weight: bold;
         border: 2px solid rgba(0, 0, 0, 0.621);
         background-color: rgba(222, 184, 135, 0.471);
+        h2{
+            font-size: 15px;
+            font-weight: bold;
+        }
     }
 }
 
